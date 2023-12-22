@@ -8,6 +8,7 @@ repos:
         exclude: notebooks/.*\.py
       - id: check-ast
       - id: check-added-large-files
+        exclude: notebooks/.*\.ipynb
       - id: check-toml
       - id: check-json
       - id: check-yaml
@@ -40,7 +41,7 @@ repos:
       - id: mypy
         args: []
         additional_dependencies: []
-        exclude: (/test_|/tests/|docs/)
+        exclude: (/test_|/tests/|docs/|notebooks/.*\.py)
 
   - repo: https://github.com/timothycrosley/isort
     rev: 5.12.0
@@ -58,13 +59,13 @@ repos:
         language: python
         types: [python]
         args: [--config, .flake8]
-        exclude: (docs/)
+        exclude: (docs/|notebooks/.*\.py)
 
   - repo: https://github.com/pycqa/pylint
     rev: v3.0.2
     hooks:
       - id: pylint
-        exclude: (/test_|tests/|docs/)
+        exclude: (/test_|tests/|docs/|notebooks/.*\.py)
 
   - repo: https://github.com/PyCQA/bandit
     rev: 1.7.5
