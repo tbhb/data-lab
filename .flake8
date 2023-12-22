@@ -1,0 +1,12 @@
+[flake8]
+exclude =
+	.git,
+	__pycache__,
+	build,
+	dist,
+	.tox,
+	venv,
+	.venv,
+	.pytest_cache
+extend-ignore = E203, E704
+max-line-length = 120

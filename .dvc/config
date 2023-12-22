@@ -1,0 +1,5 @@
+[core]
+    remote = wasabi
+['remote "wasabi"']
+    url = s3://tbhb-data-lab
+    endpointurl = https://s3.wasabisys.com
