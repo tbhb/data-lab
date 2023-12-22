@@ -104,7 +104,7 @@ evaluate = "^0.4.1"
 exllamav2 = "^0.0.11"
 faiss-cpu = { platform = "darwin", version = "^1.7.4" }
 faiss-gpu = [
-  { platform = "linux", version = "^1.7.2" },
+  # { platform = "linux", version = "^1.7.2" },
   { platform = "windows", version = "^1.7.2" }
 ]
 faker = "^21.0.0"
@@ -213,6 +213,7 @@ wandb = "^0.16.1"
 webdataset = "^0.2.86"
 xgboost = "^2.0.3"
 ydata-profiling = "^4.6.3"
+deepspeed = "^0.12.6"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "^1.7.5"
