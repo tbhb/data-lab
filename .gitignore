@@ -178,3 +178,5 @@ data/processed/*
 data/raw/*
 !data/raw/*.dvc
 !data/raw/.gitkeep
+
+outputs/*.ipynb
