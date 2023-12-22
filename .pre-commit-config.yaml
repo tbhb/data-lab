@@ -12,6 +12,8 @@ repos:
   - id: check-toml
   - id: check-json
   - id: check-yaml
+  - id: mixed-line-endings
+    args: [--fix=lf]
 
 - repo: https://github.com/psf/black
   rev: 23.11.0
